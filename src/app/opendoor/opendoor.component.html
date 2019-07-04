@@ -1,0 +1,131 @@
+<nav>
+  <ul>
+    <li>Opendoor</li>
+    <li>Sell</li>
+    <li>Buy</li>
+    <li>How it Works</li>
+    <li>Pricing</li>
+    <li>More</li>
+  </ul>
+</nav>
+<div class="hero">
+  <div class="col-12">
+    <br>
+    <div class="col-2"></div>
+        <div class="col-4">
+            <br><br><h1 class="hero-text">Come right in with<br> Opendoor's self tour</h1>
+            Opendoor wants you to tour homes on your schedule.<br>
+            Today, we offer two convenient ways for you and your<br>
+            family to visit
+        </div>
+        <div class="col-5 hero-img"></div>
+  </div>
+</div>
+
+<div class="main">
+
+  <h1>How to self-tour with Opendoor</h1>
+  <p>Ready to visit an Opendoor home? Come on in with our new self-touur feature.<br>
+    Just use the Opendoor app to visit thousands of Opendoor owned homes<br>
+     across the country and day of the week from 6am-9pm</p>
+  <div class="col-12">
+    <div class="col-6 walking"></div>
+    <div class="col-6">
+
+      <ul class="instructions">
+        <li *ngFor="let data of data">
+             <div class="circle">{{ data.number }}</div> <div class="text"><h3>{{data.text}}</h3></div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+    <div class="col-12">
+        <div class="options">
+          <div class="main">
+            <div class="col-6 content">
+              <h4>The Opendoor App</h4>
+              <h1>Unlock more options with our app</h1> 
+                <ul class="app-c">
+                  <li *ngFor="let data of app">
+                    <h3 class="">{{ data.text }}</h3>
+                  </li>
+                </ul>
+            </div>
+            <div class="col-6 content">
+              <div class="app"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-12">
+      <div class="main">
+        <div class="tips">
+            <h1>Helpful Tips</h1>
+         <div class="col-6">
+           
+            <ul *ngFor="let tips of tips">
+                <li *ngIf="tips.number"><img src="{{ tips.img }}"/>
+                  <div class=""><h3>{{ tips.header }}</h3>
+                    {{ tips.text}} 
+                  </div>
+                </li>
+            </ul>
+          </div>
+
+          <div class="col-6">
+              <ul *ngFor="let tips of tips">
+                  <li *ngIf="tips.two"><img src="{{ tips.img }}"/>
+                    <div class=""><h3>{{ tips.header }}</h3>
+                      {{ tips.text}} 
+                    </div>
+                  </li>
+              </ul>
+            </div>
+
+            <div class="col-12">
+              <div class="faq">
+              <h1>FAQs</h1>
+              <br>
+              <hr>
+              <span class="add">&#43;</span>
+              <p>Can I self-tour any Opendoor home?</p>
+              
+              <hr>
+              <span class="add">&#43;</span>
+              <p>Do I need to use the Opendoor app to self-tour Opendoor homes?</p>
+              <hr>
+              <span class="add">&#43;</span>
+              <p>Does Opendoor offer virtual tours of it's homes?</p>
+              <hr>
+              <span class="add">&#43;</span>
+              <p>What is the best time to self-tour a home?</p>
+              <hr>
+
+              </div>
+            </div>
+
+        </div>
+     </div>
+
+      <div class="col-12">
+          <div class="map">
+              <div class="main">
+                <div class="last-text"><h1>Make yourself at<br>
+                   home and unlock the<br>
+                    door with your phone</h1></div>
+                
+              </div>
+            </div>
+      </div>
+
+
+    </div>
+
+
+
+
